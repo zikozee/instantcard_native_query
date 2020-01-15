@@ -16,13 +16,12 @@ public class InstantCardController {
         this.cardService = cardService;
     }
 
-
-    @GetMapping(value="/instantCard/JSON/{orgKey}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value={"/instantCard/JSON/{orgKey}", "/JSON/{orgKey}"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public InstantCard getJSONInstantCard(@PathVariable String orgKey){
         return cardService.getSingleEntity(orgKey);
     }
 
-    @GetMapping(value = "/instantCard/XML/{orgKey}", produces = MediaType.APPLICATION_XML_VALUE)
+    @GetMapping(value = {"/instantCard/XML/{orgKey}", "/XML/{orgKey}"}, produces = MediaType.APPLICATION_XML_VALUE)
     public InstantCard getXMLInstantCard(@PathVariable String orgKey){
         return cardService.getSingleEntity(orgKey);
     }
