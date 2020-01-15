@@ -1,0 +1,65 @@
+package com.heritage.instantcard.model;
+
+import lombok.*;
+
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
+public class InstantCard {
+    private String accountId;
+    private String bankId;
+    private String orgKey;
+    private String orgType;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String title;
+    private String gender;
+    private String dayOfBirth;
+    private String monthOfBirth;
+    private String yearOfBirth;
+    private String dateOfBirth;
+    private String customerType;
+    private String language;
+    private String cellPhone;
+    private String city;
+    private String cityCode;
+    private String relationshipOpeningDate;
+    private String status;
+    private String manager;
+    private String motherMaidenName;
+    private String uniqueId;
+    private String uniqueIdType;
+    private String staffEmployeeId;
+    private String shortName;
+    private String blacklisted;
+    private String negated;
+    private String suspended;
+    private String preferredName;
+    private String recordStatus;
+    private String name;
+    private String defaultAddressType;
+    private String preferredPhone;
+    private String startDate;
+    private String currencyCode;
+    private String primarySolId;
+    private String primaryBranch;
+    private String customerId;
+    private String entityCreditFlag;
+    private String iseBankingEnabled;
+    private String isSmsBankingEnabled;
+    private String subSegment;
+    private String isWapBankingEnabled;
+    private String alreadyCreatedInEbanking;
+    private String smsBankingMobileNumber;
+    private String accessOwnerSegment;
+    private String accessOwnerGroup;
+    private String preferredPhoneType;
+    private String preferredEmail;
+    private String addressLine1;
+    private String addressLine2;
+    private String addressLine3;
+    private String state;
+    private String stateCode;
+    private String country;
+    private String countryCode;
+    private String zip;
+}
