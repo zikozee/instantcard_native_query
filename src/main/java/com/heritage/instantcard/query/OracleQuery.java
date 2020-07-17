@@ -1,6 +1,7 @@
 package com.heritage.instantcard.query;
 
 public class OracleQuery {
+    private OracleQuery(){}
     public static String QUERY_FOR_INSTANT_CARD = "select AccountId ,Bank_Id, OrgKey,OrgType,cust_First_Name as FirstName,cust_Middle_Name as MiddleName,cust_Last_Name as LastName,SALUTATION as Title,Gender,BIRTH_DAY as DayOfBirth,\n" +
             "BIRTH_MONTH as MonthOfBirth,BIRTH_YEAR as YearOfBirth,CUST_DOB as DateOfBirth ,CUST_TYPE_CODE as CustomerType,\n" +
             "CUST_LANGUAGE as Language,PHONE_CELL as CellPhone,(select ref_desc from tbaadm.rct where ref_code = a.city and del_flg = 'N' AND ref_rec_type = '01' and rownum < 2 )City,\n" +

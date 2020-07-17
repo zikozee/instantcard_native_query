@@ -28,8 +28,6 @@ public class DatasourceConfig {
     private String oracleDialect;
 
 
-    //TODO use ms sql-server to configure another database with another bean name and try connect likewise
-    // remember extractor is the best
     @Bean(name = "oracle_db")
     public DataSource getSqlServerTemplate(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();

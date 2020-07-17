@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 public class InstantCardServiceImpl implements InstantCardService {
 
     //Extractor is the better preferred
-    public String ORACLE_QUERY = OracleQuery.QUERY_FOR_INSTANT_CARD;
+    public static final  String ORACLE_QUERY = OracleQuery.QUERY_FOR_INSTANT_CARD;
 
     @Resource(name = "oracle_db")
     private DataSource dataSource;
